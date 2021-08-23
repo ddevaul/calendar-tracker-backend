@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=startup-jobs-board:* npm run devstart"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "express-validator": "^6.12.1",
+    "hbs": "^4.1.2",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.13.7",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "engines": {
+    "node": "15.x"
+  }
+}
